@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <article data-testid="test-todo-card">
+
+      <!-- Checkbox -->
+      <div class="checkbox-row">
+        <input
+          type="checkbox"
+          id="complete-toggle"
+          data-testid="test-todo-complete-toggle"
+          aria-label="Mark task as complete"
+        />
+        <label for="complete-toggle">Mark complete</label>
+      </div>
+
+      <!-- Title -->
+      <h2 data-testid="test-todo-title">Redesign Dashboard UI</h2>
+
+      <!-- Description -->
+      <p data-testid="test-todo-description">
+        Revamp the main dashboard with new analytics widgets.
+      </p>
+
+      <!-- Priority -->
+      <span data-testid="test-todo-priority" class="badge priority-high">High</span>
+
+      <!-- Status -->
+      <span data-testid="test-todo-status" class="badge status-progress">In Progress</span>
+
+      <!-- Due Date -->
+      <time
+        data-testid="test-todo-due-date"
+        data-due="2025-08-20T17:00:00"
+      ></time>
+
+      <!-- Time Remaining -->
+      <time
+        data-testid="test-todo-time-remaining"
+        data-due="2025-08-20T17:00:00"
+      ></time>
+
+      <!--Category Tags -->
+      <ul role="list" data-testid="test-todo-tags">
+        <li data-testid="test-todo-tag-design">Design</li>
+        <li data-testid="test-todo-tag-ui">UI</li>
+        <li data-testid="test-todo-tag-dashboard">Dashboard</li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="actions">
+        <button data-testid="test-todo-edit-button" aria-label="Edit task">Edit</button>
+        <button data-testid="test-todo-delete-button" aria-label="Delete task">Delete</button>
+      </div>
+
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

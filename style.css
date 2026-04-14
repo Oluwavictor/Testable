@@ -1,0 +1,147 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	font-family: sans-serif;
+	background: #f4f4f8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 20px;
+  }
+  
+  main {
+	width: 100%;
+	max-width: 480px;
+  }
+  
+  article {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 12px;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+  
+  .checkbox-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+  }
+  
+  .checkbox-row input[type="checkbox"] {
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	accent-color: #4f46e5;
+  }
+  
+  .checkbox-row label {
+	font-size: 0.85rem;
+	color: #666;
+	cursor: pointer;
+  }
+  
+  /* Title */
+  h2 {
+	font-size: 1.2rem;
+	color: #111;
+  }
+  
+  /* Description */
+  p {
+	font-size: 0.9rem;
+	color: #555;
+	line-height: 1.5;
+  }
+  
+  /* Badges */
+  .badge {
+	display: inline-block;
+	padding: 4px 12px;
+	border-radius: 20px;
+	font-size: 0.78rem;
+	font-weight: 600;
+	width: fit-content;
+  }
+  
+  .priority-high   { background: #fff3e0; color: #e65100; }
+  .priority-urgent { background: #fdecea; color: #c62828; }
+  .priority-medium { background: #fffde7; color: #f57f17; }
+  .priority-low    { background: #e8f5e9; color: #2e7d32; }
+  
+  .status-progress  { background: #e8eaf6; color: #3949ab; }
+  .status-overdue   { background: #fdecea; color: #c62828; }
+  .status-completed { background: #e8f5e9; color: #2e7d32; }
+  
+  /* Time elements */
+  time {
+	font-size: 0.85rem;
+	color: #444;
+	display: block;
+  }
+  
+  time.overdue  { color: #c62828; font-weight: 600; }
+  time.due-soon { color: #e65100; font-weight: 600; }
+  
+  /* Tags */
+  ul[role="list"] {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	list-style: none;
+  }
+  
+  ul[role="list"] li {
+	background: #f0f0f5;
+	color: #444;
+	padding: 4px 12px;
+	border-radius: 20px;
+	font-size: 0.78rem;
+  }
+  
+  /* Actions */
+  .actions {
+	display: flex;
+	gap: 8px;
+  }
+  
+  .actions button {
+	padding: 8px 18px;
+	border: none;
+	border-radius: 8px;
+	font-size: 0.85rem;
+	cursor: pointer;
+	font-family: inherit;
+  }
+  
+  .actions button:first-child {
+	background: #4f46e5;
+	color: #fff;
+  }
+  
+  .actions button:last-child {
+	background: #fee2e2;
+	color: #b91c1c;
+  }
+  
+  .actions button:hover {
+	opacity: 0.85;
+  }
+  
+  /* Completed state */
+  article.completed h2 {
+	text-decoration: line-through;
+	color: #999;
+  }
+  
+  article.completed p {
+	color: #aaa;
+  }
