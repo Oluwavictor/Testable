@@ -1,6 +1,6 @@
 # Todo Item Card
 
-A simple todo task card built with semantic HTML, CSS, and vanilla JavaScript.
+A simple todo task card 
 
 ## Live Demo
 [View Live](https://your-deployment-url.com)
